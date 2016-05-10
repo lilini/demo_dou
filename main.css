@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Microsoft Yahei";
+}
+input ul li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    min-width:1440px;
+    min-height:791px;
+    font-size:12px;
+    color:#000000;
+}
+
+#nav{
+    /*min-width: 1440px;*/
+    height:149px;
+    background-color: #838485;
+}
+
+#main{
+    width:1100px;
+    height:429px;
+    margin:0px auto 28px auto;
+    background-color: #FFFFFF;
+}
+
+.m_head{
+    height:44px;
+    margin:20px 20px;
+}
+
+.m_head span{
+    margin-left: 7px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.return{
+    float: right;
+    width:51px;
+    height:25px;
+    text-align: center;
+    line-height: 25px;
+    color: #000000;
+    background-image: url("images/return.png");
+}
+
+.puzzles_type{
+    height:41px;
+    padding: 0px 36px 20px;
+}
+
+.puzzles_type span{
+    font-size: 14px;
+}
+
+.puzzles_type ul{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.puzzles_type ul li{
+    width:140px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #E0E2E6;
+    display: inline-block;
+    list-style:none;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.puzzles_type ul .select{
+    background-image: url("images/sepuzzles_type_select.png");
+    border: none;
+}
+
+.select_test{
+    height: 51px;
+    border: 1px dashed #E0E2E6;
+    margin: 0px 20px;
+    background-color: #F8F9FB;
+    position: relative;
+}
+
+.select_test a{
+    display: inline-block;
+    width:140px;
+    height:35px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin:auto;
+    background-color: #29BDB9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.selected_test{
+
+    border: 1px dashed #E0E2E6;
+    margin: 10px 20px 0px 20px;
+    background-color: #F8F9FB;
+    position: relative;
+}
+
+.selected_test::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.selected_test span{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin:10px 0px 0px 13px;
+}
+
+.selected_test ul{
+    float:left;
+    width: 930px;
+    margin-bottom:10px;
+}
+
+.selected_test ul li{
+    display: inline-block;
+    width: 170px;
+    height: 30px;
+    margin:10px 10px 0px 0px;
+    line-height: 30px;
+    border: 1px solid #E0E2E6;
+    text-align: center;
+}
+
+.selected_test .Expansion{
+    float:right;
+    width:45px;
+    margin: 10px 0px ;
+    cursor: pointer;
+}
+
+.selected_test .Expansion span{
+    float:right;
+    width:11px;
+    background: url("images/Expansion.png") no-repeat;
+    margin: 10px 0px;
+}
+
+.change{
+    float: left;
+    width:40px;
+    height:30px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-right:5px;
+    background-color: #29BDB9;
+}
+
+.user_num{
+    font-size: 14px;
+    margin: 10px 20px;
+}
+
+.user_num span{
+    height: 30px;
+    line-height: 30px;
+}
+
+.user_num input{
+    height: 30px;
+    width: 85px;
+    margin-right: 10px;
+}
+
+.submit{
+    font-size: 14px;
+    width: 130px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin:10px 105px;
+    background-color: #29BDB9;
+}
+
+.selected_test .l{
+    display: none ;
+}
+
+#footer{
+    /*min-width:1440px;*/
+    height:185px;
+    background-color: #838485;
+}

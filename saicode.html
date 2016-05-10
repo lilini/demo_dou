@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>saicode</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="nav"></div>
+    <div id="main">
+        <div class="m_head">
+            <img src="images/m_head_1.png" alt="生成账号图标"/>
+            <span>按试卷生成账号</span>
+            <a class="return" title="return" href="#">返回</a>
+        </div>
+        <div class="puzzles_type">
+            <span>题型：</span>
+            <ul>
+                <li>按试卷生成账号</li>
+                <li>生成全部试卷账号</li>
+            </ul>
+        </div>
+        <div class="select_test">
+            <a title="select_test" href="#">+ 选择审阅试卷</a>
+        </div>
+        <div class="selected_test">
+            <span>已选试卷：</span>
+            <ul>
+                <li>JavaScript第一批试卷</li>
+                <li>JavaScript第一批试卷</li>
+                <li>JavaScript第一批试卷</li>
+                <li>JavaScript第一批试卷</li>
+                <li>JavaScript第一批试卷</li>
+                <li class="l_line 1">JavaScript第一批试卷</li>
+                <li class="l_line 1">JavaScript第一批试卷</li>
+                <li class="l_line 1">JavaScript第一批试卷</li>
+                <li class="l_line 1">JavaScript第一批试卷</li>
+                <li class="l_line 1">JavaScript第一批试卷</li>
+                <li class="l_line 1">JavaScript第一批试卷</li>
+                <li class="l_line 1">JavaScript第一批试卷</li>
+                <li class="l_line 1">JavaScript第一批试卷</li>
+                <li class="l_line 1">JavaScript第一批试卷</li>
+                <li class="l_line 1">JavaScript第一批试卷</li>
+            </ul>
+            <span class="Expansion" >展开<span></span></span>
+            <a class="change" href="#">修改</a>
+        </div>
+        <div class="user_num">
+            <span>审题账号数量：</span>
+            <input type="text" name=""/>个
+        </div>
+        <a class="submit" href="#">提交</a>
+    </div>
+
+    <div id="footer"></div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $('.puzzles_type ul li').click(function(){
+            if($(this).hasClass('select')){
+                $(this).removeClass('select');
+            }else{
+                $('.puzzles_type ul li').removeClass('select');
+                $(this).addClass('select');
+            }
+        });
+        $('.Expansion').click(function(){
+            $('.l_line').toggleClass('l');
+            $('.change').toggle();
+        });
+    </script>
+</body>
+</html>
